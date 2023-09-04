@@ -65,13 +65,15 @@ I am using the Free Software Foundation, ARM GCC compiler:
     warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
-
-
 This implementation is verified against the data in:
 
 [National Institute of Standards and Technology Special Publication 800-38A 2001 ED](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a.pdf) Appendix F: Example Vectors for Modes of Operation of the AES.
 
 The other appendices in the document are valuable for implementation details on e.g. padding, generation of IVs and nonces in CTR-mode etc.
+
+The differential fault analysis attack can be tested in test.c
+
+The test checks the decryption against the original message and prints out "FAILURE" or "SUCCESS" based on results.
 
 
 A heartfelt thank-you to [all the nice people](https://github.com/kokke/tiny-AES-c/graphs/contributors) out there who have contributed to this project.
