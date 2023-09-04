@@ -56,24 +56,7 @@ GCC size output when only CTR mode is compiled for ARM:
         903       0       0     903     387 aes.o
 
 
-I am using the Free Software Foundation, ARM GCC compiler:
-
-    $ arm-none-eabi-gcc --version
-    arm-none-eabi-gcc (4.8.4-1+11-1) 4.8.4 20141219 (release)
-    Copyright (C) 2013 Free Software Foundation, Inc.
-    This is free software; see the source for copying conditions.  There is NO
-    warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-
-This implementation is verified against the data in:
-
-[National Institute of Standards and Technology Special Publication 800-38A 2001 ED](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a.pdf) Appendix F: Example Vectors for Modes of Operation of the AES.
-
-The other appendices in the document are valuable for implementation details on e.g. padding, generation of IVs and nonces in CTR-mode etc.
-
 The differential fault analysis attack can be tested in test.c
 
 The test checks the decryption against the original message and prints out "FAILURE" or "SUCCESS" based on results.
 
-
-A heartfelt thank-you to [all the nice people](https://github.com/kokke/tiny-AES-c/graphs/contributors) out there who have contributed to this project.
