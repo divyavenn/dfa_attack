@@ -41,8 +41,6 @@ The module uses less than 200 bytes of RAM and 1-2K ROM when compiled for ARM, b
 
 It is one of the smallest implementations in C I've seen yet, but do contact me if you know of something smaller (or have improvements to the code here). 
 
-I've successfully used the code on 64bit x86, 32bit ARM and 8 bit AVR platforms.
-
 
 GCC size output when only CTR mode is compiled for ARM:
 
@@ -79,5 +77,3 @@ The other appendices in the document are valuable for implementation details on 
 
 A heartfelt thank-you to [all the nice people](https://github.com/kokke/tiny-AES-c/graphs/contributors) out there who have contributed to this project.
 
-
-All material in this repository is in the public domain.
